@@ -28,6 +28,7 @@ int main()
 
     }
 
+    // printing the indices of the elements forming the biggest sum of a sub-array of length k
     while (k--)
         cout << index++ << " ";
 
