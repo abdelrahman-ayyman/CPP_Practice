@@ -5,20 +5,17 @@ using namespace std;
 int main()
 {
     // n <= 900 & 0 <= x <= 500
-    int n, x1, x2, arr[501] = {0};
+    int n, x, arr[501] = {0};
 
-    cin >> n >> x1;
-    cout << x1;
-    arr[x1]++;
+    cin >> n;
 
-    n--;
     while(n--)
     {
-        cin >> x2;
-        if (x2 != x1 && arr[x2] == 0)
-            cout << " " << x2;
+        cin >> x;
+        if (arr[x] == 0)
+            cout << x << " ";
 
-        arr[x2]++;
+        arr[x]++;
     }
 	return 0;
 }
